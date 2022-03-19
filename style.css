@@ -7,7 +7,12 @@ ul {
   list-style-type: none;
 }
 
-@media all and (max-width: 767px) {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media all and (min-width: 767px) {
   .first-header {
     color: white;
     background-color: rgb(62, 62, 62);
@@ -17,5 +22,29 @@ ul {
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    margin-top: 10px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px;
+  }
+
+  .cc-campaign {
+    border: #ec5242 5px solid;
+    color: #ec5242;
+    padding: 10px;
+  }
+
+  .active {
+    color: #ec5242;
   }
 }
